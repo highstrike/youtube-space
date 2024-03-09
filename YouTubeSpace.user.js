@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         YouTube Space
 // @description  Fix space bar behaviour when video element is out of focus.
-// @icon         https://raw.githubusercontent.com/highstrike/youtube-watched/master/icon.png
-// @namespace    https://github.com/highstrike/youtube-watched
+// @icon         https://raw.githubusercontent.com/highstrike/youtube-space/master/icon.png
+// @namespace    https://github.com/highstrike/youtube-space
 // @version      1.0
 // @author       highstrike
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
