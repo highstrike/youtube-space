@@ -1,5 +1,5 @@
 # YouTube Space
-Userscript that fixes the space bar behaviour when video element is out of focus
+Userscript that fixes the space bar behaviour when video element is out of focus.
 
 The script is published on OpenUserJS at: https://openuserjs.org/scripts/highstrike/YouTube_Space.
 
