@@ -7,22 +7,26 @@
 // @author       highstrike
 // @match        *://www.youtube.com/*
 // @grant        none
-// @version      1.0.1
+// @version      2.0.0
 // @copyright    2024, highstrike (https://openuserjs.org/users/highstrike)
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // @updateURL    https://openuserjs.org/meta/highstrike/YouTube_Space.meta.js
 // @downloadURL  https://openuserjs.org/install/highstrike/YouTube_Space.user.js
 // ==/UserScript==
 
-window.addEventListener('keydown', function(e) {
-    // console.log(document.activeElement.className);
-    let isSpace = e.keyCode === 32; // Space
-    let allowedClasses = ['ytp-progress-bar', 'ytp-fine-scrubbing-thumbnails'];
+window.addEventListener('keydown', (e) => {
+    const isSpace = e.code === 'Space'; // Use e.code for better readability
+    const allowedClasses = ['ytp-progress-bar', 'ytp-fine-scrubbing-thumbnails'];
+
     if (isSpace && allowedClasses.includes(document.activeElement.className)) {
-        document.dispatchEvent(new KeyboardEvent("keydown", {
-            key: "K",
+        const event = new KeyboardEvent('keydown', {
+            key: 'k',
+            code: 'KeyK', // Use 'code' to specify the key
             keyCode: 75,
-            which: 75
-        }));
+            which: 75,
+            bubbles: true,
+            cancelable: true
+        });
+        document.dispatchEvent(event);
     }
 });
