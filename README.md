@@ -1,3 +1,6 @@
+# DEPRECATED
+Use the [YouTube Space bar Fix](https://chromewebstore.google.com/detail/youtube-space-bar-fix/hnoggpcpecjklffkjahhkkhhkdagheoa?hl=en) extension instead.
+
 # YouTube Space
 Userscript that fixes the space bar behaviour when video element is out of focus.
 
